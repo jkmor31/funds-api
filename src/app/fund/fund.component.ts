@@ -27,8 +27,8 @@ export class FundComponent implements OnInit {
     })
   }
 
-  deleteFund(id: number) {
-    this.fundService.deleteFund(id).subscribe();
+  deleteFund():void {
+    this.fundService.deleteFund(this.fund.id).subscribe();
     alert("This fund has been deleted");
   }
   edit():void {

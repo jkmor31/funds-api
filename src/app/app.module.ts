@@ -8,13 +8,15 @@ import { FundComponent } from './fund/fund.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EditComponent } from './edit/edit.component';
 import { FormsModule } from '@angular/forms';
+import { CreateComponent } from './create/create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FundsComponent,
     FundComponent,
-    EditComponent
+    EditComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,

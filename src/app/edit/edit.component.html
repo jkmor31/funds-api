@@ -1,5 +1,5 @@
 <h1>Edit this mutual fund</h1>
-<form #editForm="ngForm" >
+
 <table>
   <th>ID</th>
   <th>Manager</th>
@@ -11,7 +11,7 @@
   <th>Tax</th>
   <th>Fees</th>
   <tr>
-    <td [(ngModel)]="fund.id">{{ fund.id }}</td>
+    <td [(ngModel)]="fund.id" ngDefaultControl >{{ fund.id }}</td>
     <td><input [(ngModel)]="fund.manager" type="text" value="{{ fund.manager }}" /></td>
     <td><input [(ngModel)]="fund.name" type="text" value="{{ fund.name }}" /></td>
     <td><input [(ngModel)]="fund.birthdate" type="text" value="{{ fund.birthdate }}" /></td>
@@ -24,4 +24,3 @@
   <tr><button type="submit" (click)="updateFund()">Update!</button></tr>
 </table>
 
-</form>

@@ -1,0 +1,25 @@
+<h1>Create new mutual fund</h1>
+
+<table>
+  <th>ID</th>
+  <th>Manager</th>
+  <th>Name</th>
+  <th>Birthdate</th>
+  <th>Balance</th>
+  <th>Interest</th>
+  <th>Term</th>
+  <th>Tax</th>
+  <th>Fees</th>
+  <tr >
+    <td [(ngModel)]="newFund.id"  >{{ newFund.id }}</td>
+    <td><input [(ngModel)]="newFund.manager" type="text" /></td>
+    <td><input [(ngModel)]="newFund.name" type="text" /></td>
+    <td><input [(ngModel)]="newFund.birthdate" type="text" /></td>
+    <td><input [(ngModel)]="newFund.balance" type="text" /></td>
+    <td><input [(ngModel)]="newFund.interest" type="text" /></td>
+    <td><input [(ngModel)]="newFund.term" type="text" /></td>
+    <td><input [(ngModel)]="newFund.tax" type="text" /></td>
+    <td><input [(ngModel)]="newFund.fees" type="text" /></td>
+  </tr>
+  <tr><button type="submit" (click)="createFund()">Update!</button></tr>
+</table>

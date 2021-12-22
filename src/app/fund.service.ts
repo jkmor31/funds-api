@@ -21,11 +21,11 @@ export class FundService {
     return this.http.get(this.url + '/' +id);
   }
 
-  deleteFund(id: number): Observable<any> {
+  deleteFund(id: any): Observable<any> {
     return this.http.delete<any>(this.url + '/' + id);
   }
-  createFund(fundData: Object): Observable<Fund>{
-    return this.http.post<Fund>(this.url, fundData);
+  createFund(newFund: Object): Observable<any>{
+    return this.http.post<any>(this.url, newFund);
   }
 
   updateFund(fund: Fund): Observable<any> {
