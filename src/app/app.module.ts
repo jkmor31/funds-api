@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { FundsComponent } from './funds/funds.component';
 import { FundComponent } from './fund/fund.component';
 import { HttpClientModule } from '@angular/common/http';
+import { EditComponent } from './edit/edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     FundsComponent,
-    FundComponent
+    FundComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

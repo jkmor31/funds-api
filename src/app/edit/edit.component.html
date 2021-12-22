@@ -1,0 +1,27 @@
+<h1>Edit this mutual fund</h1>
+<form #editForm="ngForm" >
+<table>
+  <th>ID</th>
+  <th>Manager</th>
+  <th>Name</th>
+  <th>Birthdate</th>
+  <th>Balance</th>
+  <th>Interest</th>
+  <th>Term</th>
+  <th>Tax</th>
+  <th>Fees</th>
+  <tr>
+    <td [(ngModel)]="fund.id">{{ fund.id }}</td>
+    <td><input [(ngModel)]="fund.manager" type="text" value="{{ fund.manager }}" /></td>
+    <td><input [(ngModel)]="fund.name" type="text" value="{{ fund.name }}" /></td>
+    <td><input [(ngModel)]="fund.birthdate" type="text" value="{{ fund.birthdate }}" /></td>
+    <td><input [(ngModel)]="fund.balance" type="text" value="{{ fund.balance }}" /></td>
+    <td><input [(ngModel)]="fund.interest" type="text" value="{{ fund.interest }}" /></td>
+    <td><input [(ngModel)]="fund.term" type="text" value="{{ fund.term }}" /></td>
+    <td><input [(ngModel)]="fund.tax" type="text" value="{{ fund.tax }}" /></td>
+    <td><input [(ngModel)]="fund.fees" type="text" value="{{ fund.fees }}" /></td>
+  </tr>
+  <tr><button type="submit" (click)="updateFund()">Update!</button></tr>
+</table>
+
+</form>
