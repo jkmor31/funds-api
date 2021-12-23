@@ -1,7 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Rubik&display=swap');
 body {
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: aliceblue;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+h1, h2 {
+    font-family: 'Playfair Display', serif;;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    max-width: 70vw;
+}
+
+.card {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    a {
+        color: blue;    
+        }
 }
