@@ -1,6 +1,6 @@
 <div class="container">
   <div class="card">
-    <h1 >{{this.fund.id}} - {{this.fund.name}}</h1> 
+    <h1 >{{this.fund.name}}</h1> <hr>
     <div *ngFor="let fund of tempFundList, let i = index">
       <div (click)="makeEditable(i)" *ngIf="fund[2]==false">
         <table>
