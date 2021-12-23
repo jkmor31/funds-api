@@ -1,25 +1,32 @@
-<table>
-  <th>Manager</th>
-  <th>ID</th>
-  <th>Name</th>
-  <th>Birthdate</th>
-  <th>Balance</th>
-  <th>Interest</th>
-  <th>Term</th>
-  <th>Tax</th>
-  <th>Fees</th>
-  <tr>
-    <td>{{ fund.manager }}</td>
-    <td>{{ fund.id }}</td>
-    <td>{{ fund.name }}</td>
-    <td>{{ fund.birthdate }}</td>
-    <td>{{ fund.balance }}</td>
-    <td>{{ fund.interest }}</td>
-    <td>{{ fund.term }}</td>
-    <td>{{ fund.tax }}</td>
-    <td>{{ fund.fees }}</td>
-  </tr>
-</table>
-<!-- <button (click)="deleteFund(fund.id)">Delete</button> -->
-<button (click)="edit()">Update</button>
-<button (click)="deleteFund()">Delete</button>
+<div class="container">
+  <div class="card">
+    <h1 >{{this.fund.id}} - {{this.fund.name}}</h1> 
+    <div *ngFor="let fund of tempFundList, let i = index">
+      <div (click)="makeEditable(i)" *ngIf="fund[2]==false">
+        <table>
+            <tr>
+              <th>{{fund[0]}}:</th>
+              <td>{{fund[1]}}</td>
+            </tr>
+          </table>
+      </div>
+      <div *ngIf="fund[2]==true">
+          <table>
+            <tr>
+              <th>{{fund[0]}} :</th>
+              <td><input (blur)="makeStatic(i)"  [(ngModel)]= "fund[1]"/></td>
+            </tr>
+          </table>
+      </div>
+  </div>
+  <button (click)="edit()">Edit Fund!</button>
+  <button (click)="deleteFund()">Delete Fund!</button>
+
+  </div>
+
+  
+  <!-- <button (click)="deleteFund(fund.id)">Delete</button> -->
+  
+
+</div>
+

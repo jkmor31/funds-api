@@ -5,3 +5,24 @@ body {
     background-color: aliceblue;
     text-align: center;
 }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    max-width: 70vw;
+}
+
+.card {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    a {
+        color: blue;    
+        }
+}

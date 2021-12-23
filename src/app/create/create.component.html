@@ -1,6 +1,49 @@
 <h1>Create new mutual fund</h1>
+<div class="container">
+  <div class="card">
+    <table>
+        <tr>
+          <th>Manager:</th>
+          <td><input [(ngModel)]="newFund.manager" type="text" /></td>    </tr>
 
-<table>
+        <tr>
+          <th>Name:</th>
+          <td><input [(ngModel)]="newFund.name" type="text" /></td>
+        </tr>
+        <tr>
+          <th>Birthdate:</th>
+          <td><input [(ngModel)]="newFund.birthdate" type="text" /></td>
+        </tr>
+        <tr>
+          <th>Balance:</th>
+          <td><input [(ngModel)]="newFund.balance" type="text" /></td>
+        </tr>
+        <tr>
+          <th>Interest:</th>
+          <td><input [(ngModel)]="newFund.interest" type="text" /></td>
+        </tr>
+        <tr>
+          <th>Term:</th>
+          <td><input [(ngModel)]="newFund.term" type="text" /></td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <th>Tax:</th>
+          <td><input [(ngModel)]="newFund.tax" type="text" /></td>
+        </tr>
+        <tr>
+          <th>Fees:</th>
+          <td><input [(ngModel)]="newFund.fees" type="text" /></td>
+        </tr>
+        
+      </table>
+      <button type="submit" (click)="createFund()">Add!</button>
+
+  </div>
+</div>
+
+
+<!-- <table>
   <th>ID</th>
   <th>Manager</th>
   <th>Name</th>
@@ -22,4 +65,4 @@
     <td><input [(ngModel)]="newFund.fees" type="text" /></td>
   </tr>
   <tr><button type="submit" (click)="createFund()">Add!</button></tr>
-</table>
+</table> -->

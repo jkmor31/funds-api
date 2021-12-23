@@ -1,6 +1,12 @@
+.card {
+min-width: 40vw;
+}
+
 table {
     margin: 20px auto;
+    text-align: left;
+
 }
-th, td {
-    padding: 10px;
+th:first-letter {
+    text-transform:capitalize;
 }
